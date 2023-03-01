@@ -21,11 +21,11 @@ class MainActivity : AppCompatActivity() {
             }
             else if (binding.etClass.text.isEmpty()){
                 binding.etClass.error="Enter your class"
-                binding.etName.requestFocus()
+                binding.etClass.requestFocus()
             }
             else if (binding.etAbout.text.isEmpty()){
                 binding.etAbout.error="About you"
-                binding.etName.requestFocus()
+                binding.etAbout.requestFocus()
             }
             else{
                 val intent=Intent(this,NextScreen::class.java)
